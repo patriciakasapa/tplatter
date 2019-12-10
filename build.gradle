@@ -24,9 +24,19 @@ ext {
 }
 
 dependencies {
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.4.4'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.4.4'
+	compile group: 'org.apache.httpcomponents', name: 'httpclient-osgi', version: '4.5.3'
+	compile group: 'org.apache.httpcomponents', name: 'httpcore-osgi', version: '4.4.6'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-web-services'
+	compile 'org.springframework.boot:spring-boot-starter-web:2.0.1.RELEASE'
+	compile 'org.springframework.boot:spring-boot-starter-data-jpa:2.0.1.RELEASE'
+	compile 'mysql:mysql-connector-java:6.0.5'
+	compile 'org.apache.commons:commons-dbcp2:2.1.1'
+	compile 'javax.xml.bind:jaxb-api:2.3.0'
+	//providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat:2.0.1.RELEASE'
 	//implementation 'org.springframework.cloud:spring-cloud-starter-aws-jdbc'
 	//implementation 'org.springframework.cloud:spring-cloud-starter-aws-messaging'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'

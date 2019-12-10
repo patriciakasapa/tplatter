@@ -1,7 +1,8 @@
 package turntabl.io.tplatter.models;
 
-import jdk.jfr.DataAmount;
+import javax.persistence.Entity;
 
+@Entity
 public class DomainTplatter {
 
     private Long id;
